@@ -1,4 +1,6 @@
-# 🧰 Simple TypeScript Starter | 2020
+# 🧰 Simple TypeScript Starter
+
+This repos is a fork of: https://github.com/stemmlerjs/simple-typescript-starter  (more details here: https://khalilstemmler.com/blogs/typescript/node-starter-project/)
 
 > We talk about a lot of **advanced Node.js and TypeScript** concepts on [the blog](https://khalilstemmler.com), particularly focused around Domain-Driven Design and large-scale enterprise application patterns. However, I received a few emails from readers that were interested in seeing what a basic TypeScript starter project looks like. So I've put together just that.
 
