@@ -23,3 +23,11 @@ This run the linter.
 #### `npm run purgue`
 
 Remove the folders: "build" and "node_modules".
+
+#### `npm run test`
+
+Execute the test with cpoverage report.
+
+#### `npm run test:watch`
+
+Execute test using watch option.
