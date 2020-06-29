@@ -22,11 +22,11 @@ This run the linter.
 
 #### `npm run purgue`
 
-Remove the folders: "build" and "node_modules".
+Remove the folders: "build", "coverage" and "node_modules".
 
 #### `npm run test`
 
-Execute the test with cpoverage report.
+Execute the test with coverage report.
 
 #### `npm run test:watch`
 
