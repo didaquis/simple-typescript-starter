@@ -1,7 +1,7 @@
 import { foo } from '../src/';
 
 describe('foo', () => {
-	it('should return foo', () => {
+	it('should exist', () => {
 		expect(foo).toBeDefined();
 	});
 
