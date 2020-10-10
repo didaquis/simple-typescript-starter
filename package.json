@@ -1,6 +1,6 @@
 {
   "name": "typescript-starter",
-  "version": "1.1.6",
+  "version": "1.1.7",
   "description": "A basic typescript app starter",
   "main": "build/index.js",
   "scripts": {
