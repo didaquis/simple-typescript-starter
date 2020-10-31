@@ -1,4 +1,4 @@
-import { foo } from '../src/';
+import { foo } from '../src';
 
 describe('foo', () => {
 	it('should exist', () => {
