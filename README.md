@@ -2,6 +2,12 @@
 
 This repos is a fork of: https://github.com/stemmlerjs/simple-typescript-starter  (more details here: https://khalilstemmler.com/blogs/typescript/node-starter-project/)
 
+
+### Requirements
+
+Node.js 12 or higher
+
+
 ### Scripts
 
 #### `npm run start:dev`
