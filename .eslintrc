@@ -17,6 +17,7 @@
 	"rules": {
 		"no-console": "warn",
 		"prettier/prettier": "error",
-		"curly": "error"
+		"curly": "error",
+		"no-return-await": "error"
 	}
 }
