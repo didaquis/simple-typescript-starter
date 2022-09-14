@@ -1,5 +1,7 @@
 # 🧰 Simple TypeScript Starter
 
+This project is a template for making Node projects using TypeScript.  
+
 This repos is a fork of: https://github.com/stemmlerjs/simple-typescript-starter (more details here: https://khalilstemmler.com/blogs/typescript/node-starter-project/)
 
 
