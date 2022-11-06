@@ -6,6 +6,7 @@
 	},
 	"parser": "@typescript-eslint/parser",
 	"plugins": [
+		"@didaquis/no-lenght",
 		"@typescript-eslint",
 		"prettier"
 	],
@@ -15,6 +16,7 @@
 		"prettier"
 	],
 	"rules": {
+		"@didaquis/no-lenght/no-lenght": "error",
 		"no-console": "warn",
 		"prettier/prettier": "error",
 		"curly": "error",
