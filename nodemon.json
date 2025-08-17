@@ -5,5 +5,5 @@
 	"events": {
 		"restart": "npm run prettier-format"
 	},
-	"exec": "ts-node ./src/index.ts"
+	"exec": "node --loader ts-node/esm ./src/index.ts"
 }

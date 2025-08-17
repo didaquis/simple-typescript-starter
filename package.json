@@ -3,6 +3,7 @@
   "version": "3.0.0",
   "description": "A basic TypeScript app starter",
   "main": "build/index.js",
+  "type": "module",
   "engines": {
     "node": "22.18.x"
   },

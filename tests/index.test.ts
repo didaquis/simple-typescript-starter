@@ -1,3 +1,4 @@
+import { describe, expect, it } from '@jest/globals';
 import { foo } from '../src';
 
 describe('foo', () => {
