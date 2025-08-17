@@ -7,7 +7,7 @@ This repos is a fork of: https://github.com/stemmlerjs/simple-typescript-starter
 
 ### Requirements
 
-Node.js 18.15 or higher
+Node.js 22.18 or higher
 
 
 ### Scripts
