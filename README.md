@@ -14,7 +14,7 @@ Node.js 22.18 or higher
 
 #### `npm run dev`
 
-Starts the application in development using `nodemon` and `ts-node` to do hot reloading.
+Starts the application in development mode using `tsx` with hot reloading, and runs Prettier in watch mode in parallel.
 
 #### `npm run build`
 
@@ -28,7 +28,7 @@ Starts the app in production by first building the project with `npm run build`,
 
 This run the linter.
 
-#### `npm run purgue`
+#### `npm run purge`
 
 Remove the folders: "build", "coverage" and "node_modules".
 
