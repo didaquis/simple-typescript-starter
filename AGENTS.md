@@ -4,7 +4,7 @@ Instructions for AI agents working on this project.
 
 ## Project
 
-Node.js boilerplate using TypeScript. Intended as a starting point for new projects.
+Node.js project using TypeScript.
 
 ## Stack
 
@@ -52,7 +52,7 @@ tsconfig.json        # TypeScript config
 
 ## ESLint
 
-Config is in `eslint.config.ts` (ESLint v9 flat config format). Do not create or restore `.eslintrc` or `.eslintignore`.
+Config is in `eslint.config.ts`.
 
 Active rules beyond recommended:
 - `no-console: warn`
