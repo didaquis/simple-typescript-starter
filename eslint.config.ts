@@ -4,9 +4,13 @@ import prettierConfig from 'eslint-config-prettier';
 import prettierPlugin from 'eslint-plugin-prettier';
 
 export default tseslint.config(
-	eslint.configs.recommended,
-	...tseslint.configs.recommended,
 	{
+		ignores: ['build/**', 'coverage/**', 'node_modules/**'],
+	},
+	eslint.configs.recommended,
+	tseslint.configs.recommended,
+	{
+		files: ['**/*.ts'],
 		plugins: {
 			prettier: prettierPlugin,
 		},
@@ -18,7 +22,4 @@ export default tseslint.config(
 		},
 	},
 	prettierConfig,
-	{
-		ignores: ['build/**', 'coverage/**', 'node_modules/**'],
-	},
 );
