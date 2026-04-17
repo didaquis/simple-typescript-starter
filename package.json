@@ -9,7 +9,7 @@
   },
   "scripts": {
     "build": "rimraf ./build && tsc",
-    "purgue": "rimraf ./build && rimraf ./coverage && rimraf ./node_modules",
+    "purge": "rimraf ./build && rimraf ./coverage && rimraf ./node_modules",
     "dev": "npm-run-all --parallel dev:server prettier-watch",
     "dev:server": "tsx watch src/index.ts",
     "start": "npm run build && node build/index.js",
