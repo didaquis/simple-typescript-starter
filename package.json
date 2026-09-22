@@ -15,7 +15,7 @@
     "dev:server": "tsx watch src/index.ts",
     "start": "npm run build && node build/index.js",
     "lint": "eslint .",
-    "prettier-format": "prettier --config .prettierrc 'src/**/*.ts' 'tests/**/*.ts' --write",
+    "prettier-format": "prettier . --write",
     "prettier-watch": "onchange 'src/**/*.ts' 'tests/**/*.ts' -- prettier --write {{changed}}",
     "test": "vitest run --coverage",
     "test:watch": "vitest",
@@ -33,6 +33,7 @@
     "eslint-plugin-prettier": "^5.5.5",
     "husky": "9.1.7",
     "jiti": "^2.6.1",
+    "lint-staged": "^17.5.1",
     "npm-run-all2": "^8.0.4",
     "onchange": "^7.1.0",
     "prettier": "^3.8.3",
@@ -41,5 +42,12 @@
     "typescript": "^5.9.3",
     "typescript-eslint": "^8.58.2",
     "vitest": "^4.1.4"
+  },
+  "lint-staged": {
+    "*.ts": [
+      "prettier --write",
+      "eslint --fix"
+    ],
+    "*.{json,md}": "prettier --write"
   }
 }

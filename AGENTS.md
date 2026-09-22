@@ -15,7 +15,7 @@ Node.js project using TypeScript.
 - **Linter:** ESLint v9 with flat config (`eslint.config.ts`)
 - **Formatter:** Prettier
 - **Dev server:** `tsx` (not `ts-node`, not `nodemon`)
-- **Git hooks:** Husky — pre-commit runs Prettier, ESLint, type-check, and tests automatically
+- **Git hooks:** Husky — pre-commit runs Prettier and ESLint on staged files (lint-staged), then type-check and tests
 
 ## Commands
 
@@ -24,6 +24,7 @@ npm run build        # Compile TypeScript to build/
 npm test             # Run tests with Vitest (with coverage)
 npm run test:watch   # Run tests in watch mode
 npm run lint         # Run ESLint
+npm run prettier-format  # Format the whole repo with Prettier
 npm run typecheck    # Type-check src, tests and config files (no emit)
 npm run dev          # Start dev server with hot reload + Prettier watch
 npm run start        # Build and run compiled output
@@ -59,6 +60,7 @@ Config is in `eslint.config.ts`.
 Uses type-aware linting (`recommendedTypeChecked` + `projectService`). Any `.ts` file must be covered by `tsconfig.json`.
 
 Active rules beyond recommended:
+
 - `no-console: warn`
 - `curly: error`
 - `@typescript-eslint/return-await: error` (`in-try-catch`)
