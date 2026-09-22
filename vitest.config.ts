@@ -4,7 +4,6 @@ export default defineConfig({
 	test: {
 		coverage: {
 			include: ['src/**'],
-			all: true,
 		},
 	},
 });
