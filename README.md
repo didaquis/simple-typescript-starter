@@ -1,14 +1,12 @@
 # 🧰 Simple TypeScript Starter
 
-This project is a template for making Node projects using TypeScript.  
+This project is a template for making Node projects using TypeScript.
 
 This repository is a fork of this [repo](https://github.com/stemmlerjs/simple-typescript-starter) with some modifications and updates.
-
 
 ### Requirements
 
 Node.js 22.18 or higher
-
 
 ### Scripts
 
@@ -26,16 +24,20 @@ Starts the app in production by first building the project with `npm run build`,
 
 #### `npm run lint`
 
-This run the linter.
+Runs ESLint.
+
+#### `npm run typecheck`
+
+Type-checks the source, tests and config files with `tsc`, without emitting any output.
 
 #### `npm run purge`
 
-Remove the folders: "build", "coverage" and "node_modules".
+Removes the `build`, `coverage` and `node_modules` folders.
 
 #### `npm run test`
 
-Execute the test with coverage report.
+Runs the tests with a coverage report.
 
 #### `npm run test:watch`
 
-Execute test using watch option.
+Runs the tests in watch mode.
