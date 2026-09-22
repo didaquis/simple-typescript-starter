@@ -1,9 +1,10 @@
+import { defineConfig } from 'eslint/config';
 import eslint from '@eslint/js';
 import tseslint from 'typescript-eslint';
 import prettierConfig from 'eslint-config-prettier';
 import prettierPlugin from 'eslint-plugin-prettier';
 
-export default tseslint.config(
+export default defineConfig(
 	{
 		ignores: ['build/**', 'coverage/**', 'node_modules/**'],
 	},
@@ -14,11 +15,18 @@ export default tseslint.config(
 		plugins: {
 			prettier: prettierPlugin,
 		},
+		languageOptions: {
+			parserOptions: {
+				projectService: {
+					allowDefaultProject: ['*.config.ts', 'tests/*.test.ts'],
+				},
+			},
+		},
 		rules: {
 			'prettier/prettier': 'error',
 			'no-console': 'warn',
 			curly: 'error',
-			'no-return-await': 'error',
+			'@typescript-eslint/return-await': ['error', 'in-try-catch'],
 		},
 	},
 	prettierConfig,
