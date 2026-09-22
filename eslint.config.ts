@@ -9,7 +9,7 @@ export default defineConfig(
 		ignores: ['build/**', 'coverage/**', 'node_modules/**'],
 	},
 	eslint.configs.recommended,
-	tseslint.configs.recommended,
+	tseslint.configs.recommendedTypeChecked,
 	{
 		files: ['**/*.ts'],
 		plugins: {
@@ -17,9 +17,7 @@ export default defineConfig(
 		},
 		languageOptions: {
 			parserOptions: {
-				projectService: {
-					allowDefaultProject: ['*.config.ts', 'tests/*.test.ts'],
-				},
+				projectService: true,
 			},
 		},
 		rules: {
